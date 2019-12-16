@@ -1,0 +1,19 @@
+<!--miniprogram/pages/mine/mine.wxml-->
+<view class="container">
+  <view class="single">
+    <view>
+      <view class="single-img">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <view class="single-name">
+        <open-data type="userNickName" lang="zh_CN"></open-data>
+      </view>
+      <image src="../../images/tea2.png"></image>
+    </view>
+    <view class="single-adress">
+      <text>{{adress.adr}}</text>
+    </view>
+    <button type="default" size='mini' class="edit">编辑</button>
+  </view>
+    <view class="bottom"></view>
+</view>

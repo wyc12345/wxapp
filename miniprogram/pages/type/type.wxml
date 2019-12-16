@@ -1,0 +1,12 @@
+<!--miniprogram/pages/type/type.wxml-->
+<view class="container">
+  <view class="top">分类</view>
+  <view class="type-box">
+    <view class="type-left">
+      
+    </view>
+    <view class="type-right"></view>
+  </view>
+  
+  <view class="bottom"></view>
+</view>

@@ -1,0 +1,44 @@
+/* miniprogram/pages/mine/mine.wxss */
+.single{
+  width: 750rpx;
+  height: 360rpx;
+  border-bottom-left-radius: 80rpx;
+  border-bottom-right-radius: 80rpx;
+  background: #fff;
+  position: relative;
+}
+.single-img{
+  width: 160rpx;
+  height: 160rpx;
+  margin-top: 40rpx;
+  margin-left: 20rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.single-name{
+  position: absolute;
+  left: 240rpx;
+  top: 80rpx;
+}
+.single-adress{
+  width: 500rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+  margin-top: 40rpx;
+  margin-left: 40rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.single image{
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  right: 56rpx;
+  top: 60rpx;
+}
+.edit{
+  position: absolute;
+  right: 40rpx;
+  bottom: 56rpx;
+}

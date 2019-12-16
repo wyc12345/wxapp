@@ -1,0 +1,57 @@
+/**index.wxss**/
+
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+/* 头部搜索框 */
+.top-input{
+  width: 750rpx;
+  height: 100rpx;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  border-radius: 0 0 60rpx 60rpx;
+}
+.top-logo{
+  width: 60rpx;
+  height: 60rpx;
+  display: inline-block;
+  margin: 0 40rpx;
+}
+.top-search{
+  width: 60rpx;
+  height: 60rpx;
+  display: inline-block;
+  margin: 0 10rpx;
+  position: relative;
+  left: -80rpx;
+
+}
+.weui-input{
+  width: 600rpx;
+  height: 68rpx;
+  line-height: 100rpx;
+  display: inline-block;
+  background-color: #f7f7f7;
+  padding-left: 40rpx;
+  border-radius: 40rpx;
+}
+
+/* 轮播图 */
+.swip{
+  width: 100%;
+  height: 430rpx;
+  margin-top: 10rpx;
+}
+swiper-item{
+  width: 750rpx;
+}
+.swiper-img{
+  width: 750rpx;
+}
+/* 底部 */
+
+

@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="container">
+  <view>
+    <!-- 头部搜索框 -->
+    <view class="top-input">
+      <image class="top-logo" src="../../images/tea.png"></image>
+      <input class="weui-input" auto-focus placeholder="搜索您喜爱的商品"/>
+      <image class="top-search" src="../../images/search.png"></image>
+    </view>
+    <!--  轮播图-->
+    <swiper class="swip"
+      indicatorDots= 'true'
+      autoplay= 'true'
+      interval= '2000'
+      duration= '500'
+    >
+      <swiper-item wx:for="{{swiper.imgUrl}}" wx:key="*this">
+        <image class="swiper-img" src="{{item}}"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 主推商品 -->
+  <view class="bottom"></view>
+</view>
