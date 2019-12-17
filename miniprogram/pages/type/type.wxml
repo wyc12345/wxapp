@@ -1,12 +1,123 @@
 <!--miniprogram/pages/type/type.wxml-->
 <view class="container">
-  <view class="top">分类</view>
-  <view class="type-box">
+  <view class="top">
+    <view class="{{active==0?'selected':'normal'}}" id="0" bindtap='switchNav'>飘逸杯</view>
+    <view class="{{active==1?'selected':'normal'}}" id="1" bindtap='switchNav'>盖碗</view>
+    <view class="{{active==2?'selected':'normal'}}" id="2" bindtap='switchNav'>紫砂壶</view>
+    <view class="{{active==3?'selected':'normal'}}" id="3" bindtap='switchNav'>茶道六君子</view>
+    <view class="{{active==4?'selected':'normal'}}" id="4" bindtap='switchNav'>茶家具</view>
+    <block></block>
+  </view>
+
+  <view class='productNav'>
+    <view class='right'>
+      <view class='type'>
+        <!-- current:当前所在滑块的 index -->
+        <swiper current='{{currentTab}}' vertical='{{false}}'>
+          <!-- catchtouchmove 阻止弹窗后滚动穿透 -->
+          <swiper-item id="0" catchtouchmove="false">
+            <view wx:for="{{3}}" class="product">
+              <image src="../../images/tea_1.png"></image>
+              <text>飘逸杯</text>
+              <text class="price">￥100</text>
+            </view>
+            <view class="product">
+              <image src="../../images/tea_2.png"></image>
+              <text>飘逸杯</text>
+              <text class="price">￥100</text>
+            </view>
+            <view class="product">
+              <image src="../../images/tea_3.png"></image>
+              <text>飘逸杯</text>
+              <text class="price">￥100</text>
+            </view>
+            <view class="product">
+              <image src="../../images/tea_2.png"></image>
+              <text>飘逸杯</text>
+              <text class="price">￥100</text>
+            </view>
+          </swiper-item>
+          <swiper-item id="1" catchtouchmove="false">
+            <view class="product">
+              <image src="../../images/tea_3.png"></image>
+              <text>盖碗</text>
+              <text class="price">￥100</text>
+            </view>
+            <view wx:for='{{5}}' class="product">
+              <image src="../../images/tea_2.png"></image>
+              <text>盖碗</text>
+              <text class="price">￥100</text>
+            </view>
+            <view class="product">
+              <image src="../../images/tea.png"></image>
+              <text>盖碗</text>
+              <text class="price">￥100</text>
+            </view>
+          </swiper-item>
+          <swiper-item id="2" catchtouchmove="false">
+            <view class="product">
+              <image src="../../images/tea1.png"></image>
+              <text>紫砂壶</text>
+              <text class="price">￥100</text>
+            </view>
+            <view class="product">
+              <image src="../../images/tea2.png"></image>
+              <text>紫砂壶</text>
+              <text class="price">￥100</text>
+            </view>
+            <view class="product">
+              <image src="../../images/tea_1.png"></image>
+              <text>紫砂壶</text>
+              <text class="price">￥100</text>
+            </view>
+          </swiper-item>
+          <swiper-item id="3" catchtouchmove="false">
+            <view class="product">
+              <image src="../../images/tea1.png"></image>
+              <text>茶道六君子</text>
+              <text class="price">￥100</text>
+            </view>
+            <view class="product">
+              <image src="../../images/tea_3.png"></image>
+              <text>茶道六君子</text>
+              <text class="price">￥100</text>
+            </view>
+            <view class="product">
+              <image src="../../images/tea_1.png"></image>
+              <text>茶道六君子</text>
+              <text class="price">￥100</text>
+            </view>
+            <view class="product">
+              <image src="../../images/tea.png"></image>
+              <text>茶道六君子</text>
+              <text class="price">￥100</text>
+            </view>
+            
+          </swiper-item>
+          <swiper-item id="4" catchtouchmove="false">
+            <view class="product">
+              <image src="../../images/tea.png"></image>
+              <text>茶家具</text>
+              <text class="price">￥100</text>
+            </view>
+           <view class="product">
+              <image src="../../images/tea_2.png"></image>
+              <text>茶家具</text>
+              <text class="price">￥100</text>
+            </view>
+          </swiper-item>
+        </swiper> 
+      </view>
+    </view>
+  </view>
+  <!-- <view class="type-box">
     <view class="type-left">
       
     </view>
-    <view class="type-right"></view>
-  </view>
+    <view class="type-right">
+
+    </view>
+  </view> -->
   
   <view class="bottom"></view>
 </view>

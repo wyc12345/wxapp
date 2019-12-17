@@ -27,7 +27,7 @@ page {
   display: inline-block;
   margin: 0 10rpx;
   position: relative;
-  left: -80rpx;
+  left: -550rpx;
 
 }
 .weui-input{
@@ -36,7 +36,7 @@ page {
   line-height: 100rpx;
   display: inline-block;
   background-color: #f7f7f7;
-  padding-left: 40rpx;
+  padding-left: 70rpx;
   border-radius: 40rpx;
 }
 

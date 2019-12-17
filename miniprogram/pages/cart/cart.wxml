@@ -1,7 +1,20 @@
 <!--miniprogram/pages/cart/cart.wxml-->
 <view class="container">
   <view class="top">购物车</view>
-  
+  <view class="cart">
+    <view wx:for="{{cart}}" class="cart-prd">
+      <image src="{{item.imgUrl}}"></image>
+      <text class="name">{{item.name}}</text>
+      <text class="price">￥{{item.price}}</text>
+      <input type="number">1</input>
+      <text class="sub" id="{{item.id}}" bindtap="sub">-</text>
+      <text>{{item.total}}</text>
+      <text class="add" id="{{item.id}}" bindtap="add">+</text>
+    </view>
+  </view>
+  <view class="total">
+
+  </view>
   <view class="bottom"></view>
 </view>
 
